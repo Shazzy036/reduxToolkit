@@ -28,12 +28,7 @@ const Product = () => {
           products.map((product) => {
             return (
               <ProductCard
-                Key={product.id}
-                id={product.id}
-                title={product.title}
-                description={product.description}
-                price={product.price}
-                thumbnail={product.thumbnail}
+                product={product}
               />
             );
           })}
